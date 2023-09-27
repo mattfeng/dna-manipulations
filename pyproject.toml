@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dna-manip"
+version = "0.1.0"
+description = "Command line tools for manipulating biology sequences."
+authors = ["Matthew Feng <mattfeng@mit.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+codon = "dna_manip.codon:get_codon_info"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
